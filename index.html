@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+    <title>Capstone Design</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <script type="text/javascript" src="./lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./lib/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+    <!-- readme -->
+</head>
+<body>
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top" id="nav">
+        <div class="container">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">DVF</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">소개</a></li>
+                <li><a href="HowtoUse.html">사용방법</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">펀딩<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">펀딩</li>
+                    <li><a href="Board_Plan.html">펀딩 찾기</a></li>
+                    <li><a href="Board_Plan.html">진행중 펀딩</a></li>
+                    <li><a href="Board_Plan.html">완료된 펀딩</a></li>
+                    <li class="divider"></li>
+                    <!--<li><a href="#">One more separated link</a></li>-->
+                </ul>
+                </li>
+                <li><a href="Account.html">내 정보</a></li>
+                <!--<li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                </ul>
+                </li>-->
+                
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">로그인 <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">비트코인</a></li>
+                    <li><a href="#">이더리움 (Meta-mask)</a></li>
+                    <li><a href="#">테더</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Alt</li>
+                    <!--<li><a href="#">One more separated link</a></li>-->
+                </ul>
+                </li>
+        <!--              <li><a href="../navbar/">Default</a></li> -->
+        <!--                  <li class="active"><a href="./">Metamask Login<span class="sr-only">(current)</span></a></li> -->
+        <!--              <li><a href="../navbar-fixed-top/">Fixed top</a></li>-->
+            </ul>      
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+      
+      
+  <div class="container">
+
+    <!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <h1>DVF</h1>
+      <p>Distributed Volunteer Funding</p>
+      <p>블록체인(Block Chain)을 활용한 봉사기부 플랫폼 DVF는 목적이 있는 누구나 인터넷에 연결만 되어있다면 접속하여 커뮤니티에 기여하고, 펀딩을 진행할 수 있습니다! 다양한 암호화폐 지갑을 선택하여 로그인하고, 진행중인 펀딩 게시물들을 확인하여 후원할 수 있습니다.</p>
+      <p><a class="btn btn-primary btn-lg" href="Fund_Detail.html" role="button">목록 보기</a></p>
+    </div>
+    <div class="container marketing">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+              <div class="col-lg-4">
+                <img class="img-circle" src="images/thumb1.jpg" alt="Generic placeholder image" width="140" height="140">
+                <h2>따뜻한 겨울, 연탄 한 장의 기적</h2>
+                <p>겨울이 다가오면 추위가 두려운 사람들이 있습니다. 쌀쌀한 공기가 옷깃을 파고드는 시기에는, 추위가 야속하기만 한 사람들이 있습니다. 경제적인 어려움 때문에 제대로 난방을 하지 못한 채 차가운 방에서 겨울을 보내야 하는 우리 이웃들입니다. 온정의 손길도 많이 줄어...</p>
+                <p><a class="btn btn-default" href="Fund_Detail.html" role="button">자세히 보기 &raquo;</a></p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <img class="img-circle" src="images/thumb2.jpg" alt="Generic placeholder image" width="140" height="140">
+                <h2>아이들이 꿈을 펼칠 수 있도록 희망을 선물해주세요!</h2>
+                <p>세계 빈곤 퇴치의 날을 아시나요?
+                    매년 10월 17일은 UN이 정한 세계 빈곤 퇴치의 날입니다. 빈곤 퇴치 및 기아 단절과 국제적 관심을 촉구하기 위하여 만들어졌습니다. ‘빈곤 퇴치’ 란 특별한 일부의 사람들만 참여하는 것이 아니라 공통의 관심사가 되어야 합니다. 우리나라에서는 아직도 많은 어린 아이들...</p>
+                <p><a class="btn btn-default" href="Fund_Detail.html" role="button">자세히 보기 &raquo;</a></p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <img class="img-circle" src="images/thumb3.jpg" alt="Generic placeholder image" width="140" height="140">
+                <h2>네팔 소녀에게 공부할 기회를 선물해요!</h2>
+                <p>“여자애가 공부는 해서 뭐해?”
+                    네팔의 수도 카트만두에서 차로 10시간. 시골 마을 바글룽에는 아주 특별한 학교가 있습니다. 바로 ‘홀리 차일드 스쿨’인데요. 가난한 아이들을 위해 무상교육을 실천합니다. 교장 KB샤히 선생님은 네팔어와 인도어, 영어, 한국어에도 능통한 인재입니다. 얼마든지 좋은 일자리...</p>
+                <p><a class="btn btn-default" href="Fund_Detail.html" role="button">자세히 보기 &raquo;</a></p>
+              </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+      
+      
+            <!-- START THE FEATURETTES -->
+      
+            <hr class="featurette-divider">
+      
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading">다양한 암호화폐 지원<span class="text-muted"></span></h2>
+                <p class="lead">비트코인, 이더리움, 코스모스 등의 플랫폼 코인부터 가치가 고정되는 스테이블 코인들 역시 지원합니다. 다양한 암호화폐를 펀딩에 사용할 수 있습니다.</p>
+              </div>
+              <div class="col-md-5">
+                <img src="images/b1.png" class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+              </div>
+            </div>
+      
+            <hr class="featurette-divider">
+      
+            <div class="row featurette">
+              <div class="col-md-7 col-md-push-5">
+                <h2 class="featurette-heading">투명한 봉사과정<span class="text-muted"></span></h2>
+                <p class="lead">계획대로 봉사가 진행돼야 봉사자에게 암호화폐가 잠금해제 됩니다. 봉사자의 활동을 직접 확인하고 감시할 수 있습니다.</p>
+              </div>
+              <div class="col-md-5 col-md-pull-7">
+                <img src="images/b3.png" class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+              </div>
+            </div>
+      
+            <hr class="featurette-divider">
+      
+            <!-- /END THE FEATURETTES -->
+      
+      
+            <!-- FOOTER -->
+            <footer>
+              <p class="pull-right"><a href="#">Back to top</a></p>
+              <p>&copy;2019 DVF PKNU CAPSTONE</p>
+            </footer>
+  </div> <!-- /container -->
+</body>
+</html>
+

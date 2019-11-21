@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+    <title>Capstone Design</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <script type="text/javascript" src="./lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./lib/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+    <!-- readme -->
+</head>
+<body>
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top" id="nav">
+            <div class="container">
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">DVF</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">소개</a></li>
+                    <li><a href="HowtoUse.html">사용방법</a></li>
+                    <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">펀딩<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li class="dropdown-header">펀딩</li>
+                        <li><a href="Board_Plan.html">펀딩 찾기</a></li>
+                        <li><a href="Board_Plan.html">진행중 펀딩</a></li>
+                        <li><a href="Board_Plan.html">완료된 펀딩</a></li>
+                        <li class="divider"></li>
+                        <!--<li><a href="#">One more separated link</a></li>-->
+                    </ul>
+                    </li>
+                    <li><a href="Account.html">내 정보</a></li>
+                    <!--<li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Nav header</li>
+                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                    </li>-->
+                    
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">로그인 <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">비트코인</a></li>
+                        <li><a href="#">이더리움 (Meta-mask)</a></li>
+                        <li><a href="#">테더</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Alt</li>
+                        <!--<li><a href="#">One more separated link</a></li>-->
+                    </ul>
+                    </li>
+            <!--              <li><a href="../navbar/">Default</a></li> -->
+            <!--                  <li class="active"><a href="./">Metamask Login<span class="sr-only">(current)</span></a></li> -->
+            <!--              <li><a href="../navbar-fixed-top/">Fixed top</a></li>-->
+                </ul>      
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+      
+      
+  <div class="container">
+<!--           <div class="jumbotron">
+        <h1>DVT</h1>
+        <p>Distributed Volunteer Funding</p>
+        <p>블록체인(Block Chain)을 활용한 봉사기부 플랫폼은 목적이 있는 누구나 인터넷에 연결만 되어있다면 접속하여 커뮤니티에 기여하고, 펀딩을 진행할 수 있습니다! 다양한 암호화폐 지갑을 선택하여 로그인하고, 진행중인 펀딩 게시물들을 확인하여 후원할 수 있습니다.</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">목록 보기</a></p>
+    </div> -->
+    <div class="text-center">
+        <h1>펀딩 정보</h1><br>
+        <h3>강제이주라는 아픈 기억을 가진 사람들의 이야기 </h3><span class="label label-success">펀딩 마감</span>
+        <span class="label label-info">활동 진행중</span>
+        <a href="#"><span class="label label-warning">진행중 투표 있음</span></a>
+        <h5 class="text-right">by 사단법인 프렌드아시아</h5>
+        <h4 class="text-left">펀딩기간 : 2019.09.15 - 2019.10.29<br>활동기간 : 2019.11.01 ~ <br>
+            </h4>
+        <br><br>
+        <img src="images/detail2.jpg"width="auto" height="auto">
+        <br><br>
+        <div role="tabpanel">
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">펀딩 개요</a></li>
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">펀딩 현황</a></li>
+                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">활동 계획</a></li>
+                <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">활동 심사</a></li>
+            </ul>
+            
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="home">
+                    
+                    <br><br>
+                    <h4 class="text-left text-danger">‘고려인’을 알고 있나요?</h4>
+                    <p class="text-left"><br>
+                        혹시, ‘고려인’에 대해 들어 본 적 있나요? 고려인은 러시아를 비롯한 독립국가연합에 살고 있는 한국인 교포를 통틀어 일컫는 말입니다. 1937년 스탈린의 명령으로 고려인들에게 시련이 닥치게 됩니다. 소련의 극동지역에 거주하고 있던 약 17만 명의 고려인들이 중앙아시아의 척박한 지역으로 강제 이주되는 일이 발생한 것이지요.
+                        <br><br>
+                        이들은 현지에서도 환영받지 못하는 편견의 대상이 되는 경우가 많았습니다. 생김새가 다르고 생활양식이 다르다는 이유 때문이지요. 정말 슬프게도 이들은 본토인 대한민국 내에서도 편견의 대상이 되기도 합니다. 구 소련의 붕괴 이후, 많은 고려인들이 본토인 대한민국에 들어와 살게 되었는데요. 이들은 이주 노동자로서 힘든 생활을 살고 있습니다. ‘배신자’ 또는 ‘외국인’ 취급을 받기 일쑤라고 합니다.
+                    </p><br>
+                    <img src="images/detail1.jpg"width="auto" height="auto">
+                    <p class="text-center text-muted">현지 고려인 1세대 할머니</p><br>
+                    <h4 class="text-left text-danger">서울에 사는 ‘고려인’들의 이야기</h4><br>
+                    <p class="text-left">
+                            현재 고려인들은 안산, 청주, 광주 등에 흩어져 살고 있습니다. 물론, 그 곳들은 이미 네트워크가 어느 정도 형성되어 있기는 합니다. 하지만 아직까지 서울 내 재한 고려인을 위한 네트워크 서비스는 제대로 구축되어 있지 않은 형편이에요. 서울이 너무 대도시이고 많은 사람들이 함께 어지럽게 살고 있기 때문일까요? 서울에 거주하고 있는 재한고려인들의 만남과 지속적인 소통의 장이 마련될 필요가 있습니다.
+                            <br><br>
+                            이에 이번에 우리는 아주 특별한 프로젝트를 진행 하려고 합니다. 이에 현재 국내에 머무르고 있는 ‘재한 고려인’ 네트워킹을 통해서 그들에게 소통의 기회를 제공하고 다양한 프로그램을 통해 한국 사회에 잘 적응할 수 있도록 도우려고 해요. 물론, 우선은 고려인 간의 만남을 제공하는 것이 일차 목표 입니다. 하지만 여기에서 그치지 않고 국내 생활에 잘 적응 할 수 있도록 한국어 교육, 문화 탐방, 사회적 기여 활동 모색 등을 통해 고려인들에게 실질적으로 도움이 되는 프로그램을 기획하고 있습니다.
+                    </p><br>
+                    <h4 class="text-left text-danger">고려인은 언어에 대한 어려움 또한 있어요</h4><br>
+                    <p class="text-left">
+                            고려인들은 같은 동포임에도 불구하고 국내에서 다른 사람들과 의사소통이 원활하지 않은 경우가 많습니다. 그렇다보니, 이주 전 출신국에서 중등 이상의 학력을 보유하고 있음에도 한국어 미숙으로 단순 노무직에 종사하는 경우가 많아요. 이들에게 한국어 교육을 제공한다면 국내에서도 더욱 당당하게 자신의 자리를 만들어 갈 수 있지 않을까요? 아마 다양한 취업 기회를 잡을 수도 있을 겁니다. 짧은 기간 유창한 모국어를 사용하게 될 수는 없을지 몰라도 그들의 삶의 질을 올리는데 분명 이번 프로젝트의 한국어 교육은 큰 역할을 할 수 있을 거에요.
+                            <br><br>
+                            한국어 교육 뿐만 아니라, 재한 고려인들의 역사의식 함양을 위한 국내 역사 문화 탐방이 포함되어 있습니다. 사회적 기여활동의 기회를 제공할 것입니다. 이런 활동들이 왜 중요할까요? 그들이 당당한 한국인의 일원으로 자긍심을 가지고 살아갈 이유를 갖게 되는 것이기 때문입니다. 그들 스스로 가치 있는 존재라는 사실을 스스로 인식함으로 자존감을 갖게 하는 것이 이번 프로젝트의 목표입니다.
+                    </p><br>
+                    <h4 class="text-left text-danger">고려인은 강제이주라는 아픈 기억을 가진 우리 동포입니다.</h4><br>
+                    <p class="text-left">
+                            고려인들은 당연히 각종 정책들을 통해 지원받아야 마땅하지만, 현실은 정책적으로 많은 부분들이 미비한 실정입니다. 같은 한국인으로서 우리 모두가 관심 가져야 할 동료이자 이웃 아닐까요?
+                            <br><br>
+                            여러분의 관심이 뼈아픈 상처와 편견의 기억을 가진 누군가에게 살아갈 의미를 제공할 수 있습니다. 함께 해 주세요.
+                    </p>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="profile">
+                    <br>
+                    <p class="text-left text-muted">
+                        <span class="label label-success">펀딩 마감</span>
+                        <span class="label label-info">활동 진행중</span>
+                        <br>
+                    </p>
+                    <h2 class="text-right">나의 후원 300,000 KRT</h2>
+                    <table class="table table-hover" style="width:400px;">
+                        <tr>
+                            <td>목표</td>
+                            <td>모인 금액</td>
+                        </tr>
+                        <tr>
+                            <td>1,000,000 KRT</td>
+                            <td>600,000 KRT</td>
+                        </tr>
+                    </table>
+                    <div class="progress" style="width:400px;">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                              60%
+                        </div>
+                    </div>
+                    <!--
+                    <div class="input-group" style="width:250px;">
+                        <input type="text" class="form-control" aria-label="...">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">BTC <span class="caret"></span></button>
+                                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                    <li><a href="#">BTC</a></li>
+                                    <li><a href="#">ETH</a></li>
+                                    <li><a href="#">XRP</a></li>
+                                    <li><a href="#">KRT</a></li>
+                                    <li><a href="#">USDT</a></li>
+                                    <li class="divider"></li>
+                                </ul>
+                                <button type="button" class="btn btn-default"> 펀딩</button>
+                            </div>
+                        </input>
+                    </div> /input-group -->
+                    
+
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="messages">
+                    <br>
+                    <div role="tabpanel">
+
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-pills" role="tablist">
+                            <li role="presentation" class="active"><a href="#atv1" aria-controls="atv1" role="tab" data-toggle="tab">활동 1</a></li>
+                            <li role="presentation"><a href="#atv2" aria-controls="atv2" role="tab" data-toggle="tab">활동 2</a></li>
+                            <li role="presentation"><a href="#atv3" aria-controls="atv3" role="tab" data-toggle="tab">활동 3</a></li>
+                            <li role="presentation"><a href="#atv4" aria-controls="atv4" role="tab" data-toggle="tab">활동 4</a></li>
+                        </ul>
+                        
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="atv1">
+                                <p class="text-left">
+                                <br>
+                                프렌드아시아는 9월 21일 고려인 문화축제를 개최하고자 계획을 세웠습니다. 고려인 및 중앙아시아국가 이주민을 위한 축제 ‘함께’를 만들어가는 과정을 소개하고자 합니다.
+                                <br>
+                                풍성한 축제가 되도록 어떤 방식으로 운영할지에 대해 네트워크 참여자들이 모두 모여 회의를 진행했습니다. 지방에 계신 분들은 영상통화를 하며 의견을 수렴했습니다.
+                                효율적인 홍보방안에 대해서 의견을 나누고 직접 축제 장소 구성에 대한 시뮬레이션을 해보기도 했습니다.
+                                
+                                <br>
+                                </p><img src="images/atv1.jpg"width="auto" height="auto" class="text-center">
+                                <p class="text-left">
+                                        <br>다양한 문화를 가진 사람들이 모두 모여 ‘함께’라는 축제를 만들어 가는 모습을 보니 행사가 어떤 모습으로 보일지 기대가 됩니다.                                        
+                                </p>
+                                <br>
+                                <div class="page-header"></div>
+                                <div class="text-center">
+                                    <h2>사용 예정 금액</h2><br>
+                                    <table class="table table-hover table-vcenter">
+                                            <tr>
+                                                <td>번호</td>
+                                                <td>사용처</td>
+                                                <td>사용 예정 금액</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>풍성한 문화축제를 위해 힘써주신 봉사자분들을 위한 식사비 8,000 * 10명</td>
+                                                <td>80,000 KRT</td>
+                                            </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="atv2">
+                                <br><div class="alert alert-warning" role="alert">아직 활동계획이 작성되지 않았어요!</div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="atv3">
+                                <br><div class="alert alert-warning" role="alert">아직 활동계획이 작성되지 않았어요!</div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="atv4">
+                                <br><div class="alert alert-warning" role="alert">아직 활동계획이 작성되지 않았어요!</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="settings">
+                    <br>
+                    <div role="tabpanel">
+
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-pills" role="tablist">
+                            <li role="presentation" class="active"><a href="#atv1j" aria-controls="atv1j" role="tab" data-toggle="tab">활동 1</a></li>
+                            <li role="presentation"><a href="#atv2j" aria-controls="atv2j" role="tab" data-toggle="tab">활동 2</a></li>
+                            <li role="presentation"><a href="#atv3j" aria-controls="atv3j" role="tab" data-toggle="tab">활동 3</a></li>
+                            <li role="presentation"><a href="#atv4j" aria-controls="atv4j" role="tab" data-toggle="tab">활동 4</a></li>
+                        </ul>
+                        
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="atv1j">
+                                
+                                <p class="text-left">
+                                <br>
+                                <h2 class="text-left"><span class="label label-warning">투표 진행중</span></h2>
+                                <br>
+                                9월 21일, 프렌드아시아는 고려인 문화축제 "함께”를 진행했습니다. 태풍이 올지 모른다는 소식에 걱정되었지만 다행스럽게도 선선한 바람 덕분에 행사 진행에 좋은 날씨였습니다.
+                                <br><br>
+                                광희동 쌍림어린이 공원에서는 고려인 문화축제 “함께”의 부스가 가득가득 채워졌습니다. 피고디(만두), 다양한 중앙아시아 음식, 마트료시카 공예품전시를 펼친 프렌드아시아와 서로까 -무료 법률상담 등이 함께했습니다. 행사에 참석하신 고려인뿐만 아니라 중앙아시아 이주민분들이 즐겁게 참여하셨습니다.
+                                <br><br>
+                                “잠깐이지만 고향 생각이 났어요. 먹고 싶었던 음식들이며 냄새들이 자꾸 생각나게 했어요….” 참석해주신 고려인 한 분께서 부스에 오셔서 말씀하셔서 뿌듯했습니다.
+                                <br>
+                                </p><img src="images/atv1j.jpg"width="auto" height="auto" class="text-center"><br><br>
+                                <p class="text-left">
+                                        오전에는 부스체험이 진행됐고, 오후 3시부터는 본 행사가 진행됐습니다. 프렌드아시아의 박용철 대표님의 인사말로 행사를 열었고, 무대 공연이 이어졌습니다. 고려인 4세로 이뤄진 BIG FINGERS팀의 분위기 전환을 위한 춤 배우기를 시작으로 카자흐스탄, 키르기스스탄 출신의 고려인분들의 무대가 이어졌습니다.
+                                        <br><br>
+                                        카자흐스탄과 키르기스스탄 춤과 노래를 듣고 따라 부르며, 고려인뿐만 아니라 이주민을 알리는 의미를 되새기는 시간을 가졌습니다.
+                                </p>
+                            <img src="images/atv2j.jpg"width="auto" height="auto" class="text-center">
+                            <div class="page-header"></div>
+                            <div class="text-center">
+                                <h2>사용 금액</h2><br>
+                                <table class="table table-hover table-vcenter">
+                                        <tr>
+                                            <td>번호</td>
+                                            <td>사용처</td>
+                                            <td>사용 금액</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>풍성한 문화축제를 위해 힘써주신 봉사자분들을 위한 식사비 8,000 * 10명</td>
+                                            <td>80,000 KRT</td>
+                                        </tr>
+                                </table>
+                                <h3 class="text-right">합계 사용 금액 80,000 KRT</h3>
+                            </div>
+                            <br><br>
+                            <div class="panel panel-default" id="vote">
+                                <div class="panel-body">
+                                    <h2>활동 심사 투표</h2>
+                                    <h3>가결 시 80,000 KRT 락업이 해제됩니다.</h3>
+                                    <h5 class="text-right text-muted">투표 기한 ~2019.11.24 13:00</h5>
+                                    <h3>현재 투표율 30%</h3>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
+                                            30%
+                                        </div>
+                                    </div>
+                                    <div class="btn-group" role="group" aria-label="...">
+                                        <button type="button" class="btn btn-success">찬성</button>
+                                        <button type="button" class="btn btn-danger">반대</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <br><br><br>
+
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="atv2j">
+                                <br><div class="alert alert-warning" role="alert">아직 활동후기가 작성되지 않았어요!</div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="atv3j">
+                                <br><div class="alert alert-warning" role="alert">아직 활동후기가 작성되지 않았어요!</div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="atv4j">
+                                <br><div class="alert alert-warning" role="alert">아직 활동후기가 작성되지 않았어요!</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+              
+        </div>
+              
+
+        
+
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    <!-- FOOTER -->
+    <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy;2019 DVF PKNU CAPSTONE</p>
+    </footer>
+  </div> <!-- /container -->
+</body>
+</html>

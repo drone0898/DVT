@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+    <title>Capstone Design</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <script type="text/javascript" src="./lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./lib/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+    <!-- readme -->
+</head>
+<body>
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top" id="nav">
+            <div class="container">
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">DVF</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">소개</a></li>
+                    <li><a href="HowtoUse.html">사용방법</a></li>
+                    <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">펀딩<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li class="dropdown-header">펀딩</li>
+                        <li><a href="Board_Plan.html">펀딩 찾기</a></li>
+                        <li><a href="Board_Plan.html">진행중 펀딩</a></li>
+                        <li><a href="Board_Plan.html">완료된 펀딩</a></li>
+                        <li class="divider"></li>
+                        <!--<li><a href="#">One more separated link</a></li>-->
+                    </ul>
+                    </li>
+                    <li class="active"><a href="Account.html">내 정보</a></li>
+                    <!--<li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Nav header</li>
+                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                    </li>-->
+                    
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">로그인 <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">비트코인</a></li>
+                        <li><a href="#">이더리움 (Meta-mask)</a></li>
+                        <li><a href="#">테더</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Alt</li>
+                        <!--<li><a href="#">One more separated link</a></li>-->
+                    </ul>
+                    </li>
+            <!--              <li><a href="../navbar/">Default</a></li> -->
+            <!--                  <li class="active"><a href="./">Metamask Login<span class="sr-only">(current)</span></a></li> -->
+            <!--              <li><a href="../navbar-fixed-top/">Fixed top</a></li>-->
+                </ul>      
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+      
+      
+          <div class="container">
+ <!--           <div class="jumbotron">
+                <h1>DVT</h1>
+                <p>Distributed Volunteer Funding</p>
+                <p>블록체인(Block Chain)을 활용한 봉사기부 플랫폼은 목적이 있는 누구나 인터넷에 연결만 되어있다면 접속하여 커뮤니티에 기여하고, 펀딩을 진행할 수 있습니다! 다양한 암호화폐 지갑을 선택하여 로그인하고, 진행중인 펀딩 게시물들을 확인하여 후원할 수 있습니다.</p>
+                <p><a class="btn btn-primary btn-lg" href="#" role="button">목록 보기</a></p>
+            </div> -->
+            <div id="board">
+                <h1>계정 정보&nbsp;<h6 class="text-muted text-right"><a href="#">새 소식 <span class="badge">3</span></a></h6></h1>    
+                <a class="btn btn-sm btn-primary" id="acc-poll-btn" href="Fund_Detail.html" role="button">내 펀딩 보기</a>
+                <a class="btn btn-sm btn-primary" id="acc-poll-btn" href="Fund_Detail.html" role="button">내 투표 보기</a>
+                <div class="page-header"></div>
+                <h2><img src="images/BTC-icon.png"width="48" height="48" style="vertical-align:bottom;">&nbsp;BTC(Bitcoin)</h2>
+                <div id="acc-address">지갑주소 : <span class="label label-danger">연결되지 않았습니다.</span></div>
+                <div id="acc-value">잔고 : 0 BTC</div>
+                <div id="acc-value">후원액 : 0 BTC</div>
+                <div class="page-header"></div>
+                <br>
+                <h2><img src="images/ETH-icon.png"width="48" height="48" style="vertical-align:bottom;">&nbsp;ETH(Ethereum)</h2>
+                <div id="acc-address">지갑주소 : <span class="label label-danger">연결되지 않았습니다.</span></div>
+                <div id="acc-value">잔고 : 0 ETH</div>
+                <div id="acc-value">후원액 : 0 ETH</div>
+                <div class="page-header"></div>
+                <br>
+                <h2><img src="images/KRT-icon.png"width="48" height="48" style="vertical-align:bottom;">&nbsp;KRT(KRW-Terra)</h2>
+                <div id="acc-address">지갑주소 : 0x88C1e09F826e9B5A840A0904E9C0f3fA1ed0a738</div>
+                <div id="acc-value">잔고 : 600,000 KRT</div>
+                <div id="acc-value">후원액 : 300,000 KRT</div>
+                <div class="page-header"></div>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            <!-- FOOTER -->
+            <footer>
+                <p class="pull-right"><a href="#">Back to top</a></p>
+                <p>&copy;2019 DVF PKNU CAPSTONE</p>
+            </footer>
+          </div> <!-- /container -->
+</body>
+</html>

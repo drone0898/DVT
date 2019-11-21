@@ -1,0 +1,70 @@
+/* 전체 스타일
+-------------------------------------------------- */
+
+
+body {
+padding-bottom: 40px;
+color: #5a5a5a;
+}
+
+/* 마케팅 내용
+-------------------------------------------------- */
+
+/* 회전광고판 아래에 있는 세개 열의 본문을 중앙 정렬한다 */
+.marketing .span4 {
+text-align: center;
+}
+.marketing h2 {
+font-weight: normal;
+}
+.marketing .span4 p {
+margin-left: 10px;
+margin-right: 10px;
+}
+
+
+/* 특집
+------------------------- */
+
+.featurette-divider {
+margin: 80px 0; /* 부트스트랩 <hr> 공간을 더 벌린다 */
+}
+.featurette {
+padding-top: 120px; /* 수직으로 그림 중앙 위치 1 단계: 본문 위아래로 패딩을 더한다. */
+overflow: hidden; /* 수직으로 그림 중앙 위치 2 단계: 유동 흐름을 마친다 */
+}
+.featurette-image {
+margin-top: -120px; /* 수직으로 그림 중앙 위치 3 단계: 중앙에 배치하기위해 패딩과 동일한 크기의 음수 여백으로 그림을 올린다. */
+}
+
+/* 유동 태그 양편에 공간을 두어서 본문과 겹치지 않게 한다. */
+.featurette-image.pull-left {
+margin-right: 40px;
+}
+.featurette-image.pull-right {
+margin-left: 40px;
+}
+
+/* 마케딩 제목을 얇게 만든다 */
+.featurette-heading {
+font-size: 50px;
+font-weight: 300;
+line-height: 1;
+letter-spacing: -1px;
+}
+
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
