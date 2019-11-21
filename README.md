@@ -1,4 +1,4 @@
 # DVT
 Distributed Volunteer Funding
 
-https://drone0898.github.io/DVT/
+https://drone0898.github.io/DVT/index.html
