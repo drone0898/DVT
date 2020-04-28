@@ -93,8 +93,7 @@
         <script type="text/javascript">
             var sendbtn = document.getElementById('sendbtn');
             sendbtn.addEventListener('click', send);
-            var androidjs = {
-                   get: function(msg){
+                function get(msg){
                     try{
                         document.getElementById('output').value = msg;
                     }catch(err){
