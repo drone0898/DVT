@@ -90,28 +90,21 @@
         <input id="sendbtn" type="button" value="send">
         <br>
         <input id="output" type="text" value="Output Here...."/>
-        <input id="getbtn" type="button" value="get">
         <script type="text/javascript">
             var sendbtn = document.getElementById('sendbtn');
-            var getbtn = document.getElementById('getbtn');
             sendbtn.addEventListener('click', sendscript);
-            getbtn.addEventListener('click', getscript);
-            var getscript = {
-                get:function(msg){
-                    try{
-                        document.getElementById('output').value = msg;
-                    }catch(err){
-                    
-                    }
+            function get(msg){
+                try{
+                    document.getElementById('output').value = msg;
+                }catch(err){
+
                 }
             }
-            var sendscript = {
-                send:function(){
-                    try{
+            function send(){
+                try{
 
-                    }catch(err){
+                }catch(err){
 
-                    }
                 }
             }
         </script>
