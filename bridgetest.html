@@ -103,7 +103,7 @@
             function send(){
                 try{
                     var mesg = document.getElementById('input').value;
-                    Android.get(mesg);
+                    Android.getString(mesg);
                     console.log(mesg);
                 }catch(err){
                     console.log(err);
