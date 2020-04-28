@@ -92,7 +92,7 @@
         <input id="output" type="text" value="Output Here...."/>
         <script type="text/javascript">
             var sendbtn = document.getElementById('sendbtn');
-            sendbtn.addEventListener('click', send);
+            sendbtn.addEventListener('click', send());
             function get(msg){
                 try{
                     document.getElementById('output').value = msg;
