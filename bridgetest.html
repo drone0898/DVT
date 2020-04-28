@@ -103,7 +103,8 @@
             function send(){
                 try{
                     var msg = document.getElementById('input').value;
-                    window.Android.get(msg);
+                    Android.get(msg);
+                    console.log(msg);
                 }catch(err){
 
                 }
