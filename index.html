@@ -86,6 +86,12 @@
     <!-- Main component for a primary marketing message or call to action -->
     <div class="jumbotron">
       <h1>DVF</h1>
+        <input type="button" value="Say hello" onClick="showAndroidToast('Hello Android!')" />
+        <script type="text/javascript">
+            function showAndroidToast(toast) {
+                Android.showToast(toast);
+            }
+        </script>
       <p>Distributed Volunteer Funding</p>
       <p>블록체인(Block Chain)을 활용한 봉사기부 플랫폼 DVF는 목적이 있는 누구나 인터넷에 연결만 되어있다면 접속하여 커뮤니티에 기여하고, 펀딩을 진행할 수 있습니다! 다양한 암호화폐 지갑을 선택하여 로그인하고, 진행중인 펀딩 게시물들을 확인하여 후원할 수 있습니다.</p>
       <p><a class="btn btn-primary btn-lg" href="Fund_Detail.html" role="button">목록 보기</a></p>
