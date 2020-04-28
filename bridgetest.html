@@ -102,11 +102,11 @@
             }
             function send(){
                 try{
-                    var msg = document.getElementById('input').value;
-                    Android.get(msg);
-                    console.log(msg);
+                    var mesg = document.getElementById('input').value;
+                    Android.get(mesg);
+                    console.log(mesg);
                 }catch(err){
-
+                    console.log(err);
                 }
             }
         </script>
