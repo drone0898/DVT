@@ -93,12 +93,11 @@
         <script type="text/javascript">
             var sendbtn = document.getElementById('sendbtn');
             sendbtn.addEventListener('click', send);
-                function get(msg){
-                    try{
-                        document.getElementById('output').value = msg;
-                    }catch(err){
-                        console.log(err);
-                    }
+            function get(msg){
+                try{
+                    document.getElementById('output').value = msg;
+                }catch(err){
+                    console.log(err);
                 }
             }
             function send(){
